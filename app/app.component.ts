@@ -30,12 +30,6 @@ export class AppComponent {
 
   retrieveQuote(message){
     this.quotes= JSON.stringify(message).toString().split(",");
-    console.log("Here are the quotes :: " + this.quotes);
-    
-  }
-  returnQuote(){
-    this.quote = this.quotes;
-    console.log(this.quote);
-    return this.quote;
+    console.log("Here are the quotes :: " + this.quotes);    
   }
 }

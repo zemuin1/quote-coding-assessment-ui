@@ -46,8 +46,6 @@ export class WebSocketAPI {
     }
 
     onMessageReceived(message) {
-       // console.log("Here are the quotes :: " + JSON.stringify(message.body).substring(17,(JSON.stringify(message.body).length-5)));
-        //console.log(JSON.stringify(message.body).substring(17,(JSON.stringify(message.body).length-5)));
         this.appComponent.retrieveQuote(JSON.stringify(message.body).substring(17,(JSON.stringify(message.body).length-5)));
     }
 }
